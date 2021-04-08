@@ -184,7 +184,7 @@ body {}
 /*  2.  Header Top CSS
 /*----------------------------------------*/
 .header-top-area, .footer-copyright-area{
-	background:#00c292;
+	background:#2A3F54;
 }
 .logo-area{
 	padding:14px 0px;
@@ -199,7 +199,7 @@ body {}
 }
 .nav.notika-top-nav>li>a:focus, .nav.notika-top-nav>li>a:hover {
     text-decoration: none;
-    background-color: #00c292;
+    background-color: #607D8B;
 }
 .navbar-nav>li>a{
 	color:#fff;
@@ -1450,7 +1450,7 @@ ul.wizard-nav-ac li a{
 	height:35px;
 	width:35px;
 	border-radius:50%;
-	background:#00c292;
+	background:#607D8B;
 	color:#fff;
 	display:inline-block;
 }
@@ -4631,3 +4631,5 @@ body.box-layout {
 /*----------------------------------------*/
 .mCS-light-1.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ background-color: #00c292; }
 .mCS-light-1.mCSB_scrollTools .mCSB_draggerRail{ background-color: #ccc; }
+
+@import url("custom.css");
