@@ -1,0 +1,457 @@
+
+
+
+
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Saskatoon - Les Fruits Défendus</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+                ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Google Fonts
+                ============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,9
+00" rel="stylesheet">
+    <!-- Bootstrap CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Bootstrap CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/owl.carousel.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.css">
+    <link rel="stylesheet" href="/static/css/owl.transitions.css">
+    <!-- meanmenu CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/meanmenu/meanmenu.min.css">
+    <!-- animate CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <!-- normalize CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <!-- mCustomScrollbar CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/scrollbar/jquery.mCustomScrollbar.m
+in.css">
+    <!-- jvectormap CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/jvectormap/jquery-jvectormap-2.0.3.
+css">
+    <!-- notika icon CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/notika-custom-icon.css">
+    <!-- wave CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/wave/waves.min.css">
+    <link rel="stylesheet" href="/static/css/wave/button.css">
+    <!-- main CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <!-- style CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- responsive CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <!-- modernizr JS
+                ============================================ -->
+    <!-- Data Table JS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/jquery.dataTables.min.css">
+    <!-- FullCalendar
+                ============================================ -->
+    <link href="/static/js/fullcalendar/lib/main.min.css" rel="stylesheet">
+
+        <!-- Modernizr
+                ============================================ -->
+    <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- jquery in the head due to django autocomplete
+                ============================================ -->
+    <script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong>
+ browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to i
+mprove your experience.</p>
+        <![endif]-->
+    <!-- Start Header Top Area -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+<!--                        <a href="/index"><img src="/static/img/logo/logo.png
+" alt="" /></a>-->
+                        <h3 style="color:white">SASKATOON-NG - alpha</h3>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="header-top-menu">
+                        <ul class="nav navbar-nav notika-top-nav">
+
+                                <li>
+                                    <a href='/login'>
+                                        <i class="notika-icon notika-support"></
+i>
+                                    </a>
+                                </li>
+
+                            <li class="nav-item">
+                                <a href="#" data-toggle="dropdown" role="button"
+ aria-expanded="false" class="nav-link dropdown-toggle">
+                                    <span class="menu-it-icon-pro">Language: en
+<i class="fa fa-caret-down"></i></span>
+                                    <form action="/i18n/setlang/" method="post"
+style="display: none" id="change_language_form">
+                                        <input type="hidden" name="csrfmiddlewar
+etoken" value="VgqlzQZC8vEQqYGax5t4ps9D89ascaau4Eso7vsIvfg1E0bri2qV53mquo6hk5PZ"
+>
+                                        <input type="hidden" value="" name="lang
+uage" id="language" />
+                                    </form>
+                                </a>
+
+                                <ul class="dropdown-menu">
+
+                                    <li><a lang_code="fr" class="change_language
+">Français (fr)</a></li>
+
+                                    <li><a lang_code="en" class="change_language
+">English (en)</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top Area -->
+    <!-- Mobile Menu start -->
+    <div class="mobile-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="mobile-menu">
+                        <nav id="dropdown">
+                            <ul class="mobile-menu-nav">
+                                <li><a href="/calendar">Calendar</a></li>
+                                <li><a data-toggle="collapse" data-target="#demo
+event" href="/harvest">Harvests</a></li>
+                                <li><a data-toggle="collapse" data-target="#demo
+crou" href="/property">Properties</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu end -->
+    <!-- Main Menu area start-->
+    <div class="main-menu-area mg-tb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+                        <li class="active"><a href="/calendar"><i class="fa fa-t
+able"></i> Calendar</a>
+                        </li>
+                        <li><a href="/harvest"><i class="fa fa-shopping-basket">
+</i> Harvests</a>
+                        </li>
+                        <li><a href="/property"><i class="glyphicon glyphicon-tr
+ee-deciduous"></i> Properties</a>
+                        </li>
+                        <li><a href="/beneficiary"><i class="fa fa-gift"></i> Be
+neficiaries</a>
+                        </li>
+                        <li><a href="/community"><i class="fa fa-users"></i> Com
+munity</a>
+                        </li>
+                        <li><a href="/equipment"><i class="fa fa-scissors"></i>
+Equipment</a>
+                        </li>
+                        <li><a href="/analytics"><i class="fa fa-bar-chart fa-fw
+"></i> Analytics</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Main Menu area End-->
+
+
+<link href="/static/admin/css/vendor/select2/select2.css" type="text/css" media=
+"screen" rel="stylesheet">
+<link href="/static/admin/css/autocomplete.css" type="text/css" media="screen" r
+el="stylesheet">
+<link href="/static/autocomplete_light/select2.css" type="text/css" media="scree
+n" rel="stylesheet">
+<script src="/static/admin/js/vendor/select2/select2.full.js"></script>
+<script src="/static/ckeditor/ckeditor-init.js" data-ckeditor-basepath="/static/
+ckeditor/ckeditor/" id="ckeditor-init-script"></script>
+<script src="/static/autocomplete_light/autocomplete_light.js"></script>
+<script src="/static/ckeditor/ckeditor/ckeditor.js"></script>
+<script src="/static/autocomplete_light/select2.js"></script>
+<script src="/static/autocomplete_light/i18n/en.js"></script>
+
+<div class="form-example-area">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-example-wrap">
+                        <div class="cmp-tb-hd">
+                            <h2>Add a new harvest</h2>
+                        </div>
+                        <div class="form-example-int">
+                            <div class="form-group">
+                                  <form method="post">
+                                      <input type="hidden" name="csrfmiddlewaret
+oken" value="VgqlzQZC8vEQqYGax5t4ps9D89ascaau4Eso7vsIvfg1E0bri2qV53mquo6hk5PZ">
+                                      <div class="form-group"><label class="cont
+rol-label" for="id_status">Harvest status</label><select name="status" class="fo
+rm-control" title=" " required id="id_status">
+  <option value="" selected>---------</option>
+
+  <option value="To-be-confirmed">To be confirmed</option>
+
+  <option value="Orphan">Orphan</option>
+
+  <option value="Adopted">Adopted</option>
+
+  <option value="Date-scheduled">Date scheduled</option>
+
+  <option value="Ready">Ready</option>
+
+  <option value="Succeeded">Succeeded</option>
+
+  <option value="Cancelled">Cancelled</option>
+
+</select>
+
+    <div class="help-block"> </div>
+
+</div>
+<div class="form-group"><label class="control-label" for="id_property">Property<
+/label><select name="property" class="form-control" title=" " required id="id_pr
+operty" data-autocomplete-light-language="en" data-autocomplete-light-url="/prop
+erty-autocomplete/" data-autocomplete-light-function="select2">
+  <option value="" selected>---------</option>
+
+</select>
+
+    <div class="help-block"> </div>
+
+</div>
+<div class="form-group"><label class="control-label" for="id_trees">Fruit trees<
+/label><select name="trees" class="form-control" title=" " required id="id_trees
+" data-autocomplete-light-language="en" data-autocomplete-light-url="/tree-autoc
+omplete/" data-autocomplete-light-function="select2" multiple>
+</select>
+
+    <div class="help-block"> </div>
+
+</div>
+<div class="form-group"><div class="checkbox"><label for="id_owner_present"><inp
+ut type="checkbox" name="owner_present" class="" id="id_owner_present"> Owner wa
+nts to be present</label></div></div>
+<div class="form-group"><div class="checkbox"><label for="id_owner_help"><input
+type="checkbox" name="owner_help" class="" id="id_owner_help"> Owner wants to pa
+rticipate</label></div></div>
+<div class="form-group"><div class="checkbox"><label for="id_owner_fruit"><input
+ type="checkbox" name="owner_fruit" class="" id="id_owner_fruit"> Owner want his
+ share of fruits</label></div></div>
+<div class="form-group"><label class="control-label" for="id_pick_leader">Pick l
+eader</label><select name="pick_leader" class="form-control" title=" " id="id_pi
+ck_leader" data-autocomplete-light-language="en" data-autocomplete-light-url="/p
+ickleader-autocomplete/" data-autocomplete-light-function="select2">
+  <option value="" selected>---------</option>
+
+</select>
+
+    <div class="help-block"> </div>
+
+</div>
+<div class="form-group"><label class="control-label" for="id_start_date">Start d
+ate</label><input type="text" name="start_date" class="form-control" placeholder
+="Start date" title="" required id="id_start_date"></div>
+<div class="form-group"><label class="control-label" for="id_end_date">End date<
+/label><input type="text" name="end_date" class="form-control" placeholder="End
+date" title="" required id="id_end_date"></div>
+<div class="form-group"><label class="control-label" for="id_nb_required_pickers
+">Number of required pickers</label><input type="number" name="nb_required_picke
+rs" value="3" min="0" class="form-control" placeholder="Number of required picke
+rs" title=" " required id="id_nb_required_pickers">
+
+    <div class="help-block"> </div>
+
+</div>
+<div class="form-group"><label class="control-label" for="id_about">Public annou
+ncement</label><div class="django-ckeditor-widget" data-field-id="id_about" styl
+e="display: inline-block;">
+    <textarea class="form-control" cols="40" id="id_about" name="about" placehol
+der="Public announcement" rows="10" title="" required data-processed="0" data-co
+nfig="{&quot;skin&quot;: &quot;moono-lisa&quot;, &quot;toolbar_Basic&quot;: [[&q
+uot;Source&quot;, &quot;-&quot;, &quot;Bold&quot;, &quot;Italic&quot;]], &quot;t
+oolbar_Full&quot;: [[&quot;Styles&quot;, &quot;Format&quot;, &quot;Bold&quot;, &
+quot;Italic&quot;, &quot;Underline&quot;, &quot;Strike&quot;, &quot;SpellChecker
+&quot;, &quot;Undo&quot;, &quot;Redo&quot;], [&quot;Link&quot;, &quot;Unlink&quo
+t;, &quot;Anchor&quot;], [&quot;Image&quot;, &quot;Flash&quot;, &quot;Table&quot
+;, &quot;HorizontalRule&quot;], [&quot;TextColor&quot;, &quot;BGColor&quot;], [&
+quot;Smiley&quot;, &quot;SpecialChar&quot;], [&quot;Source&quot;]], &quot;toolba
+r&quot;: &quot;Full&quot;, &quot;height&quot;: 291, &quot;width&quot;: 835, &quo
+t;filebrowserWindowWidth&quot;: 940, &quot;filebrowserWindowHeight&quot;: 725, &
+quot;language&quot;: &quot;en&quot;}" data-external-plugin-resources="[]" data-i
+d="id_about" data-type="ckeditortype"></textarea>
+</div></div>
+<input type="hidden" name="publication_date" id="id_publication_date">
+                                      <div class="form-group">
+                                          <button type="submit" class="btn btn-p
+rimary">Send</button>
+                                          <button type="reset" class="btn btn-da
+nger">Reset</button>
+                                      </div>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </div>
+</div>
+
+
+    <!-- Start Footer area-->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p><a href="https://github.com/LesFruitsDefendus/saskato
+on-ng">Saskatoon</a> is a Free/Libre Software developed by the collective <a hre
+f="http://www.lesfruitsdefendus.org">Les Fruits Défendus.</a> Template by <a hre
+f="https://colorlib.com">Colorlib</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer area-->
+    <!-- bootstrap JS
+                ============================================ -->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- wow JS
+                ============================================ -->
+    <script src="/static/js/wow.min.js"></script>
+    <!-- price-slider JS
+                ============================================ -->
+    <script src="/static/js/jquery-price-slider.js"></script>
+    <!-- owl.carousel JS
+                ============================================ -->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!-- scrollUp JS
+                ============================================ -->
+    <script src="/static/js/jquery.scrollUp.min.js"></script>
+    <!-- meanmenu JS
+                ============================================ -->
+    <script src="/static/js/meanmenu/jquery.meanmenu.js"></script>
+    <!-- counterup JS
+                ============================================ -->
+    <script src="/static/js/counterup/jquery.counterup.min.js"></script>
+    <script src="/static/js/counterup/waypoints.min.js"></script>
+    <script src="/static/js/counterup/counterup-active.js"></script>
+    <!-- mCustomScrollbar JS
+                ============================================ -->
+    <script src="/static/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></s
+cript>
+    <!-- jvectormap JS
+                ============================================ -->
+    <script src="/static/js/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="/static/js/jvectormap/jquery-jvectormap-world-mill-en.js"></scr
+ipt>
+    <script src="/static/js/jvectormap/jvectormap-active.js"></script>
+    <!-- sparkline JS
+                ============================================ -->
+    <script src="/static/js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="/static/js/sparkline/sparkline-active.js"></script>
+    <!-- sparkline JS
+                ============================================ -->
+    <script src="/static/js/flot/jquery.flot.js"></script>
+    <script src="/static/js/flot/jquery.flot.resize.js"></script>
+    <script src="/static/js/flot/curvedLines.js"></script>
+    <script src="/static/js/flot/flot-active.js"></script>
+    <!-- knob JS
+                ============================================ -->
+    <script src="/static/js/knob/jquery.knob.js"></script>
+    <script src="/static/js/knob/jquery.appear.js"></script>
+    <script src="/static/js/knob/knob-active.js"></script>
+    <!--  wave JS
+                ============================================ -->
+    <script src="/static/js/wave/waves.min.js"></script>
+    <script src="/static/js/wave/wave-active.js"></script>
+    <!--  todo JS
+                ============================================ -->
+    <script src="/static/js/todo/jquery.todo.js"></script>
+    <!-- plugins JS
+                ============================================ -->
+    <script src="/static/js/plugins.js"></script>
+    <!-- Data Table JS
+                ============================================ -->
+    <script src="/static/js/data-table/jquery.dataTables.min.js"></script>
+    <script src="/static/js/data-table/data-table-act.js"></script>
+        <!--  Chat JS
+                ============================================ -->
+    <script src="/static/js/chat/moment.min.js"></script>
+    <script src="/static/js/chat/jquery.chat.js"></script>
+    <!-- main JS
+                ============================================ -->
+    <script src="/static/js/main.js"></script>
+        <!-- tawk chat JS
+                ============================================ -->
+    <script src="/static/js/tawk-chat.js"></script>
+    <!-- icheck JS
+                ============================================ -->
+    <script src="/static/js/icheck/icheck.min.js"></script>
+    <script src="/static/js/icheck/icheck-active.js"></script>
+    <!-- Login JS
+                ============================================ -->
+    <script src="/static/js/login/login-action.js"></script>
+    <!-- bootstrap JS
+                ============================================ -->
+    <script src="/static/js/django_select2/django_select2.js"></script>
+
+  <!-- FullCalendar -->
+  <script src="/static/js/moment/min/moment.min.js"></script>
+  <script src="/static/js/fullcalendar/lib/main.min.js"></script>
+
+    <!-- Language selection -->
+    <script>
+    $('.change_language').click(function(e){
+        e.preventDefault();
+        $('#language').val($(this).attr('lang_code'));
+        $('#change_language_form').submit();
+    });
+    </script>
+</body>
+
+</html>

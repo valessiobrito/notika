@@ -1,0 +1,657 @@
+
+
+
+
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Saskatoon - Les Fruits Défendus</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+                ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Google Fonts
+                ============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,9
+00" rel="stylesheet">
+    <!-- Bootstrap CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Bootstrap CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/owl.carousel.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.css">
+    <link rel="stylesheet" href="/static/css/owl.transitions.css">
+    <!-- meanmenu CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/meanmenu/meanmenu.min.css">
+    <!-- animate CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <!-- normalize CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <!-- mCustomScrollbar CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/scrollbar/jquery.mCustomScrollbar.m
+in.css">
+    <!-- jvectormap CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/jvectormap/jquery-jvectormap-2.0.3.
+css">
+    <!-- notika icon CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/notika-custom-icon.css">
+    <!-- wave CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/wave/waves.min.css">
+    <link rel="stylesheet" href="/static/css/wave/button.css">
+    <!-- main CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <!-- style CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- responsive CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <!-- modernizr JS
+                ============================================ -->
+    <!-- Data Table JS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/jquery.dataTables.min.css">
+    <!-- FullCalendar
+                ============================================ -->
+    <link href="/static/js/fullcalendar/lib/main.min.css" rel="stylesheet">
+
+        <!-- Modernizr
+                ============================================ -->
+    <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- jquery in the head due to django autocomplete
+                ============================================ -->
+    <script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong>
+ browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to i
+mprove your experience.</p>
+        <![endif]-->
+    <!-- Start Header Top Area -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+<!--                        <a href="/index"><img src="/static/img/logo/logo.png
+" alt="" /></a>-->
+                        <h3 style="color:white">SASKATOON-NG - alpha</h3>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="header-top-menu">
+                        <ul class="nav navbar-nav notika-top-nav">
+
+                                <li>
+                                    <a href='/login'>
+                                        <i class="notika-icon notika-support"></
+i>
+                                    </a>
+                                </li>
+
+                            <li class="nav-item">
+                                <a href="#" data-toggle="dropdown" role="button"
+ aria-expanded="false" class="nav-link dropdown-toggle">
+                                    <span class="menu-it-icon-pro">Language: en
+<i class="fa fa-caret-down"></i></span>
+                                    <form action="/i18n/setlang/" method="post"
+style="display: none" id="change_language_form">
+                                        <input type="hidden" name="csrfmiddlewar
+etoken" value="Ctk5d6bYsu4zvfulBE977nMKG2atMWKgGttiCvGbzuV671TjlaG3kOlJWIWGlwhS"
+>
+                                        <input type="hidden" value="" name="lang
+uage" id="language" />
+                                    </form>
+                                </a>
+
+                                <ul class="dropdown-menu">
+
+                                    <li><a lang_code="fr" class="change_language
+">Français (fr)</a></li>
+
+                                    <li><a lang_code="en" class="change_language
+">English (en)</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top Area -->
+    <!-- Mobile Menu start -->
+    <div class="mobile-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="mobile-menu">
+                        <nav id="dropdown">
+                            <ul class="mobile-menu-nav">
+                                <li><a href="/calendar">Calendar</a></li>
+                                <li><a data-toggle="collapse" data-target="#demo
+event" href="/harvest">Harvests</a></li>
+                                <li><a data-toggle="collapse" data-target="#demo
+crou" href="/property">Properties</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu end -->
+    <!-- Main Menu area start-->
+    <div class="main-menu-area mg-tb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+                        <li class="active"><a href="/calendar"><i class="fa fa-t
+able"></i> Calendar</a>
+                        </li>
+                        <li><a href="/harvest"><i class="fa fa-shopping-basket">
+</i> Harvests</a>
+                        </li>
+                        <li><a href="/property"><i class="glyphicon glyphicon-tr
+ee-deciduous"></i> Properties</a>
+                        </li>
+                        <li><a href="/beneficiary"><i class="fa fa-gift"></i> Be
+neficiaries</a>
+                        </li>
+                        <li><a href="/community"><i class="fa fa-users"></i> Com
+munity</a>
+                        </li>
+                        <li><a href="/equipment"><i class="fa fa-scissors"></i>
+Equipment</a>
+                        </li>
+                        <li><a href="/analytics"><i class="fa fa-bar-chart fa-fw
+"></i> Analytics</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Main Menu area End-->
+
+
+
+<link href="/static/admin/css/vendor/select2/select2.css" type="text/css" media=
+"screen" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/css/select2.mi
+n.css" type="text/css" media="screen" rel="stylesheet">
+<link href="/static/admin/css/autocomplete.css" type="text/css" media="screen" r
+el="stylesheet">
+<link href="/static/django_select2/django_select2.css" type="text/css" media="sc
+reen" rel="stylesheet">
+<link href="/static/autocomplete_light/select2.css" type="text/css" media="scree
+n" rel="stylesheet">
+<script src="/static/admin/js/vendor/select2/select2.full.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/select2.mi
+n.js"></script>
+<script src="/static/autocomplete_light/autocomplete_light.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.12/js/i18n/en.js
+"></script>
+<script src="/static/autocomplete_light/select2.js"></script>
+<script src="/static/django_select2/django_select2.js"></script>
+<script src="/static/autocomplete_light/i18n/en.js"></script>
+
+<div class="form-example-area">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="form-example-wrap">
+                        <div class="cmp-tb-hd">
+                            <h2>Add a new property</h2>
+                        </div>
+                        <div class="form-example-int">
+                            <div class="form-group">
+                                  <form method="post">
+                                      <input type="hidden" name="csrfmiddlewaret
+oken" value="Ctk5d6bYsu4zvfulBE977nMKG2atMWKgGttiCvGbzuV671TjlaG3kOlJWIWGlwhS">
+                                      <div class="form-group"><label class="cont
+rol-label" for="id_owner">Owner</label><select name="owner" class="form-control"
+ title="" id="id_owner" data-autocomplete-light-language="en" data-autocomplete-
+light-url="/actor-autocomplete/" data-autocomplete-light-function="select2">
+  <option value="" selected>---------</option>
+
+</select></div>
+<div class="form-group"><div class="checkbox"><label for="id_is_active" title="T
+his property exists and may be able to host a pick"><input type="checkbox" name=
+"is_active" class="" id="id_is_active" checked> Is active</label></div>
+
+    <div class="help-block">This property exists and may be able to host a pick<
+/div>
+
+</div>
+<div class="form-group"><label class="control-label" for="id_authorized">Authori
+zed for this season</label><select name="authorized" class="form-control" title=
+"Harvest in this property has been authorized for the current season by its owne
+r" id="id_authorized">
+  <option value="unknown" selected>Unknown</option>
+
+  <option value="true">Yes</option>
+
+  <option value="false">No</option>
+
+</select>
+
+    <div class="help-block">Harvest in this property has been authorized for the
+ current season by its owner</div>
+
+</div>
+<div class="form-group"><div class="checkbox"><label for="id_pending" title="Thi
+s property was created through a public form and needs to be validated by an adm
+inistrator"><input type="checkbox" name="pending" class="" id="id_pending" check
+ed> Pending</label></div>
+
+    <div class="help-block">This property was created through a public form and
+needs to be validated by an administrator</div>
+
+</div>
+<div class="form-group"><label class="control-label" for="id_trees">Trees</label
+><select name="trees" data-minimum-input-length="0" data-allow-clear="false" cla
+ss="form-control django-select2" title="" required id="id_trees" multiple>
+  <option value="1">Abricotier</option>
+
+  <option value="2">Amélanchier</option>
+
+  <option value="3">Cerisier sucré</option>
+
+  <option value="4">Cerisier griotte</option>
+
+  <option value="5">Fraisier</option>
+
+  <option value="6">Framboisier</option>
+
+  <option value="7">Groseillier</option>
+
+  <option value="8">Blackberry</option>
+
+  <option value="9">Noyer</option>
+
+  <option value="10">Pêcher</option>
+
+  <option value="11">Poirier rouge</option>
+
+  <option value="12">Poirier jaune</option>
+
+  <option value="13">Poirier vert</option>
+
+  <option value="14">Pommier vert</option>
+
+  <option value="15">Pommier rouge</option>
+
+  <option value="16">Pommier jaune</option>
+
+  <option value="17">Pommettier</option>
+
+  <option value="18">Purple plum tree</option>
+
+  <option value="19">Green grapevine</option>
+
+  <option value="20">Vigne à raisin bleu</option>
+
+  <option value="21">Rhubarbe</option>
+
+  <option value="22">Sureau</option>
+
+  <option value="23">Figuier</option>
+
+  <option value="24">Blackcurrant</option>
+
+  <option value="25">Aronia bush</option>
+
+  <option value="26">Mulberry tree</option>
+
+  <option value="27">Red grapevine</option>
+
+  <option value="28">Yellow plum tree</option>
+
+  <option value="29">Asian pear tree</option>
+
+  <option value="30">Green plum tree</option>
+
+</select></div>
+<div class="form-group"><label class="control-label" for="id_trees_location">Tre
+es location</label><input type="text" name="trees_location" maxlength="200" clas
+s="form-control" placeholder="Trees location" title="Front yard or backyard?" id
+="id_trees_location">
+
+    <div class="help-block">Front yard or backyard?</div>
+
+</div>
+<div class="form-group"><label class="control-label" for="id_avg_nb_required_pic
+kers">Required pickers on average</label><input type="number" name="avg_nb_requi
+red_pickers" value="1" min="0" class="form-control" placeholder="Required picker
+s on average" title="" required id="id_avg_nb_required_pickers"></div>
+<div class="form-group"><div class="checkbox"><label for="id_public_access"><inp
+ut type="checkbox" name="public_access" class="" id="id_public_access"> Publicly
+ accessible</label></div></div>
+<div class="form-group"><label class="control-label" for="id_trees_accessibility
+">Trees accessibility</label><input type="text" name="trees_accessibility" maxle
+ngth="200" class="form-control" placeholder="Trees accessibility" title="Any inf
+o on how to access the tree (eg. key, gate etc)" id="id_trees_accessibility">
+
+    <div class="help-block">Any info on how to access the tree (eg. key, gate et
+c)</div>
+
+</div>
+<div class="form-group"><div class="checkbox"><label for="id_neighbor_access"><i
+nput type="checkbox" name="neighbor_access" class="" id="id_neighbor_access"> Ac
+cess to neighboring terrain if needed</label></div></div>
+<div class="form-group"><div class="checkbox"><label for="id_compost_bin"><input
+ type="checkbox" name="compost_bin" class="" id="id_compost_bin"> Compost bin cl
+oseby</label></div></div>
+<div class="form-group"><div class="checkbox"><label for="id_ladder_available"><
+input type="checkbox" name="ladder_available" class="" id="id_ladder_available">
+ There is a ladder available in the property</label></div></div>
+<div class="form-group"><div class="checkbox"><label for="id_ladder_available_fo
+r_outside_picks"><input type="checkbox" name="ladder_available_for_outside_picks
+" class="" id="id_ladder_available_for_outside_picks"> A ladder is available in
+the property and can be used for nearby picks</label></div></div>
+<div class="form-group"><div class="checkbox"><label for="id_harvest_every_year"
+><input type="checkbox" name="harvest_every_year" class="" id="id_harvest_every_
+year"> Produces fruits every year</label></div></div>
+<div class="form-group"><label class="control-label" for="id_number_of_trees">To
+tal number of trees/vines on this property</label><input type="number" name="num
+ber_of_trees" min="0" class="form-control" placeholder="Total number of trees/vi
+nes on this property" title="" id="id_number_of_trees"></div>
+<div class="form-group"><label class="control-label" for="id_approximative_matur
+ity_date">Approximative maturity date</label><input type="text" name="approximat
+ive_maturity_date" class="form-control" placeholder="Approximative maturity date
+" title="" id="id_approximative_maturity_date"></div>
+<div class="form-group"><label class="control-label" for="id_fruits_height">Heig
+ht of lowest fruits</label><input type="number" name="fruits_height" min="0" cla
+ss="form-control" placeholder="Height of lowest fruits" title="" id="id_fruits_h
+eight"></div>
+<div class="form-group"><label class="control-label" for="id_street_number">Numb
+er</label><input type="text" name="street_number" maxlength="10" class="form-con
+trol" placeholder="Number" title="" id="id_street_number"></div>
+<div class="form-group"><label class="control-label" for="id_street">Street</lab
+el><input type="text" name="street" maxlength="50" class="form-control" placehol
+der="Street" title="" id="id_street"></div>
+<div class="form-group"><label class="control-label" for="id_complement">Complem
+ent</label><input type="text" name="complement" maxlength="150" class="form-cont
+rol" placeholder="Complement" title="" id="id_complement"></div>
+<div class="form-group"><label class="control-label" for="id_postal_code">Postal
+ code</label><input type="text" name="postal_code" maxlength="10" class="form-co
+ntrol" placeholder="Postal code" title="" id="id_postal_code"></div>
+<div class="form-group"><label class="control-label" for="id_publishable_locatio
+n">Publishable location</label><input type="text" name="publishable_location" ma
+xlength="50" class="form-control" placeholder="Publishable location" title="Apro
+ximative location to be used in public communications (not the actual address)"
+id="id_publishable_location">
+
+    <div class="help-block">Aproximative location to be used in public communica
+tions (not the actual address)</div>
+
+</div>
+<div class="form-group"><label class="control-label" for="id_neighborhood">Neigh
+borhood</label><select name="neighborhood" class="form-control" title="" require
+d id="id_neighborhood">
+  <option value="" selected>---------</option>
+
+  <option value="1">Ahuntsic</option>
+
+  <option value="2">Anjou</option>
+
+  <option value="3">Cartierville</option>
+
+  <option value="4">Côte-des-Neiges</option>
+
+  <option value="5">Ghetto-McGill</option>
+
+  <option value="6">Île-Bizard-Sainte-Geneviève</option>
+
+  <option value="7">Ile-des-Soeurs</option>
+
+  <option value="8">Lachine</option>
+
+  <option value="9">LaSalle</option>
+
+  <option value="10">Mercier-Hochelaga-Maisonneuve</option>
+
+  <option value="11">Mile End</option>
+
+  <option value="12">Montréal-Nord</option>
+
+  <option value="13">Montréal-Ouest</option>
+
+  <option value="14">Notre-Dame-de-Grâce</option>
+
+  <option value="15">Outremont</option>
+
+  <option value="16">Parc-Extension</option>
+
+  <option value="17">Petite-Patrie</option>
+
+  <option value="18">Pierrefonds-Roxboro</option>
+
+  <option value="19">Plateau-Mont-Royal</option>
+
+  <option value="20">Pointe-Saint-Charles</option>
+
+  <option value="21">Rivière-des-Prairies-Pointe-aux-Trembles</option>
+
+  <option value="22">Rosemont</option>
+
+  <option value="23">Saint-Henri-Little-Burgundy-Griffintown</option>
+
+  <option value="24">Saint-Laurent</option>
+
+  <option value="25">Saint-Léonard</option>
+
+  <option value="26">Saint-Michel</option>
+
+  <option value="27">Senneville</option>
+
+  <option value="28">Snowdon</option>
+
+  <option value="29">Verdun</option>
+
+  <option value="30">Ville-Marie</option>
+
+  <option value="31">Villeray</option>
+
+  <option value="32">Ville-de-Mont-Royal</option>
+
+  <option value="33">Westmount</option>
+
+  <option value="34">Autre</option>
+
+  <option value="35">Ville-Émard</option>
+
+  <option value="36">Dorval</option>
+
+  <option value="37">Kirkland</option>
+
+</select></div>
+<div class="form-group"><label class="control-label" for="id_city">City</label><
+select name="city" class="form-control" title="" id="id_city">
+  <option value="1" selected>Montreal</option>
+
+  <option value="2">Île-Perrot</option>
+
+  <option value="3">Repentigny</option>
+
+  <option value="4">Sainte-Therese</option>
+
+</select></div>
+<div class="form-group"><label class="control-label" for="id_state">Province</la
+bel><select name="state" class="form-control" title="" id="id_state">
+  <option value="1" selected>Quebec</option>
+
+</select></div>
+<div class="form-group"><label class="control-label" for="id_country">Country</l
+abel><select name="country" class="form-control" title="" id="id_country">
+  <option value="1" selected>Canada</option>
+
+</select></div>
+<div class="form-group"><label class="control-label" for="id_additional_info">Ad
+ditional information</label><textarea name="additional_info" cols="40" rows="10"
+ maxlength="1000" class="form-control" placeholder="Additional information" titl
+e="Any additional information that we should be aware of" id="id_additional_info
+">
+</textarea>
+
+    <div class="help-block">Any additional information that we should be aware o
+f</div>
+
+</div>
+                                      <div class="form-group">
+                                          <button type="submit" class="btn btn-p
+rimary">Send</button>
+                                          <button type="reset" class="btn btn-da
+nger">Reset</button>
+                                      </div>
+                                  </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </div>
+</div>
+
+
+    <!-- Start Footer area-->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p><a href="https://github.com/LesFruitsDefendus/saskato
+on-ng">Saskatoon</a> is a Free/Libre Software developed by the collective <a hre
+f="http://www.lesfruitsdefendus.org">Les Fruits Défendus.</a> Template by <a hre
+f="https://colorlib.com">Colorlib</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer area-->
+    <!-- bootstrap JS
+                ============================================ -->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- wow JS
+                ============================================ -->
+    <script src="/static/js/wow.min.js"></script>
+    <!-- price-slider JS
+                ============================================ -->
+    <script src="/static/js/jquery-price-slider.js"></script>
+    <!-- owl.carousel JS
+                ============================================ -->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!-- scrollUp JS
+                ============================================ -->
+    <script src="/static/js/jquery.scrollUp.min.js"></script>
+    <!-- meanmenu JS
+                ============================================ -->
+    <script src="/static/js/meanmenu/jquery.meanmenu.js"></script>
+    <!-- counterup JS
+                ============================================ -->
+    <script src="/static/js/counterup/jquery.counterup.min.js"></script>
+    <script src="/static/js/counterup/waypoints.min.js"></script>
+    <script src="/static/js/counterup/counterup-active.js"></script>
+    <!-- mCustomScrollbar JS
+                ============================================ -->
+    <script src="/static/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></s
+cript>
+    <!-- jvectormap JS
+                ============================================ -->
+    <script src="/static/js/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="/static/js/jvectormap/jquery-jvectormap-world-mill-en.js"></scr
+ipt>
+    <script src="/static/js/jvectormap/jvectormap-active.js"></script>
+    <!-- sparkline JS
+                ============================================ -->
+    <script src="/static/js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="/static/js/sparkline/sparkline-active.js"></script>
+    <!-- sparkline JS
+                ============================================ -->
+    <script src="/static/js/flot/jquery.flot.js"></script>
+    <script src="/static/js/flot/jquery.flot.resize.js"></script>
+    <script src="/static/js/flot/curvedLines.js"></script>
+    <script src="/static/js/flot/flot-active.js"></script>
+    <!-- knob JS
+                ============================================ -->
+    <script src="/static/js/knob/jquery.knob.js"></script>
+    <script src="/static/js/knob/jquery.appear.js"></script>
+    <script src="/static/js/knob/knob-active.js"></script>
+    <!--  wave JS
+                ============================================ -->
+    <script src="/static/js/wave/waves.min.js"></script>
+    <script src="/static/js/wave/wave-active.js"></script>
+    <!--  todo JS
+                ============================================ -->
+    <script src="/static/js/todo/jquery.todo.js"></script>
+    <!-- plugins JS
+                ============================================ -->
+    <script src="/static/js/plugins.js"></script>
+    <!-- Data Table JS
+                ============================================ -->
+    <script src="/static/js/data-table/jquery.dataTables.min.js"></script>
+    <script src="/static/js/data-table/data-table-act.js"></script>
+        <!--  Chat JS
+                ============================================ -->
+    <script src="/static/js/chat/moment.min.js"></script>
+    <script src="/static/js/chat/jquery.chat.js"></script>
+    <!-- main JS
+                ============================================ -->
+    <script src="/static/js/main.js"></script>
+        <!-- tawk chat JS
+                ============================================ -->
+    <script src="/static/js/tawk-chat.js"></script>
+    <!-- icheck JS
+                ============================================ -->
+    <script src="/static/js/icheck/icheck.min.js"></script>
+    <script src="/static/js/icheck/icheck-active.js"></script>
+    <!-- Login JS
+                ============================================ -->
+    <script src="/static/js/login/login-action.js"></script>
+    <!-- bootstrap JS
+                ============================================ -->
+    <script src="/static/js/django_select2/django_select2.js"></script>
+
+  <!-- FullCalendar -->
+  <script src="/static/js/moment/min/moment.min.js"></script>
+  <script src="/static/js/fullcalendar/lib/main.min.js"></script>
+
+    <!-- Language selection -->
+    <script>
+    $('.change_language').click(function(e){
+        e.preventDefault();
+        $('#language').val($(this).attr('lang_code'));
+        $('#change_language_form').submit();
+    });
+    </script>
+</body>
+
+</html>

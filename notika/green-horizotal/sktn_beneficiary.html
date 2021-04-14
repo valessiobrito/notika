@@ -1,0 +1,1264 @@
+
+
+
+
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Saskatoon - Les Fruits Défendus</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+                ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <!-- Google Fonts
+                ============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,9
+00" rel="stylesheet">
+    <!-- Bootstrap CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Bootstrap CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/owl.carousel.css">
+    <link rel="stylesheet" href="/static/css/owl.theme.css">
+    <link rel="stylesheet" href="/static/css/owl.transitions.css">
+    <!-- meanmenu CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/meanmenu/meanmenu.min.css">
+    <!-- animate CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/animate.css">
+    <!-- normalize CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/normalize.css">
+    <!-- mCustomScrollbar CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/scrollbar/jquery.mCustomScrollbar.m
+in.css">
+    <!-- jvectormap CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/jvectormap/jquery-jvectormap-2.0.3.
+css">
+    <!-- notika icon CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/notika-custom-icon.css">
+    <!-- wave CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/wave/waves.min.css">
+    <link rel="stylesheet" href="/static/css/wave/button.css">
+    <!-- main CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <!-- style CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- responsive CSS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <!-- modernizr JS
+                ============================================ -->
+    <!-- Data Table JS
+                ============================================ -->
+    <link rel="stylesheet" href="/static/css/jquery.dataTables.min.css">
+    <!-- FullCalendar
+                ============================================ -->
+    <link href="/static/js/fullcalendar/lib/main.min.css" rel="stylesheet">
+
+        <!-- Modernizr
+                ============================================ -->
+    <script src="/static/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- jquery in the head due to django autocomplete
+                ============================================ -->
+    <script src="/static/js/vendor/jquery-1.12.4.min.js"></script>
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong>
+ browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to i
+mprove your experience.</p>
+        <![endif]-->
+    <!-- Start Header Top Area -->
+    <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+<!--                        <a href="/index"><img src="/static/img/logo/logo.png
+" alt="" /></a>-->
+                        <h3 style="color:white">SASKATOON-NG - alpha</h3>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="header-top-menu">
+                        <ul class="nav navbar-nav notika-top-nav">
+
+                                <li>
+                                    <a href='/login'>
+                                        <i class="notika-icon notika-support"></
+i>
+                                    </a>
+                                </li>
+
+                            <li class="nav-item">
+                                <a href="#" data-toggle="dropdown" role="button"
+ aria-expanded="false" class="nav-link dropdown-toggle">
+                                    <span class="menu-it-icon-pro">Language: en
+<i class="fa fa-caret-down"></i></span>
+                                    <form action="/i18n/setlang/" method="post"
+style="display: none" id="change_language_form">
+                                        <input type="hidden" name="csrfmiddlewar
+etoken" value="v8xKVImgrZDSPNx2Iaj31LdiEm4fC70zDMtaTmusQRdtd7zs09wADM121MbenraX"
+>
+                                        <input type="hidden" value="" name="lang
+uage" id="language" />
+                                    </form>
+                                </a>
+
+                                <ul class="dropdown-menu">
+
+                                    <li><a lang_code="fr" class="change_language
+">Français (fr)</a></li>
+
+                                    <li><a lang_code="en" class="change_language
+">English (en)</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top Area -->
+    <!-- Mobile Menu start -->
+    <div class="mobile-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="mobile-menu">
+                        <nav id="dropdown">
+                            <ul class="mobile-menu-nav">
+                                <li><a href="/calendar">Calendar</a></li>
+                                <li><a data-toggle="collapse" data-target="#demo
+event" href="/harvest">Harvests</a></li>
+                                <li><a data-toggle="collapse" data-target="#demo
+crou" href="/property">Properties</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu end -->
+    <!-- Main Menu area start-->
+    <div class="main-menu-area mg-tb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+                        <li class="active"><a href="/calendar"><i class="fa fa-t
+able"></i> Calendar</a>
+                        </li>
+                        <li><a href="/harvest"><i class="fa fa-shopping-basket">
+</i> Harvests</a>
+                        </li>
+                        <li><a href="/property"><i class="glyphicon glyphicon-tr
+ee-deciduous"></i> Properties</a>
+                        </li>
+                        <li><a href="/beneficiary"><i class="fa fa-gift"></i> Be
+neficiaries</a>
+                        </li>
+                        <li><a href="/community"><i class="fa fa-users"></i> Com
+munity</a>
+                        </li>
+                        <li><a href="/equipment"><i class="fa fa-scissors"></i>
+Equipment</a>
+                        </li>
+                        <li><a href="/analytics"><i class="fa fa-bar-chart fa-fw
+"></i> Analytics</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Main Menu area End-->
+
+
+<!-- Data Table area Start-->
+<div class="data-table-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="data-table-list">
+                    <div class="table-responsive">
+                        <table class="table table-striped" id="data-table-basic"
+>
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Organization</th>
+                                <th  style="width: 22%">Description</th>
+                                <th>Contact</th>
+                                <th>Neighborhood</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            <tr>
+                                <td>872</td>
+                                <td>Maison de Quartier de Villeray</td>
+                                <td></td>
+                                <td>Admin Saskatoon
+                                     <br><small>514-272-4589</small>
+                                </td>
+                                <td>Villeray</td>
+                            </tr>
+
+                            <tr>
+                                <td>862</td>
+                                <td>FEEDback Ahuntsic Cartierville</td>
+                                <td>Mis à jour : septembre 2020
+Nom de l&#x27;organisme: FEEDback Ahuntsic-Cartierville
+
+Adresse: la maison de l&#x27;amitié : 20 rue Chabanel O. (Nous y sommes seulemen
+t les dimanches!)
+
+Numéro de téléphone: 514-349-4407 (texto et téléphone) et 514-202-2202 (messager
+ie vocale)
+
+Courriel: projetfeedback.ac@gmail.com
+
+Personne-contact : Elisabeth Paradis et Jennifer Coutou Dellar
+
+Heures de dépôt des fruits: Entre 10h et 14h les dimanches
+Est-ce nécessaire de prévenir avant de venir porter les fruits? Oui, s&#x27;il v
+ous plaît. Ça peut être la journée-même
+Limite d&#x27;entreposage de fruits: Nous ne pourrons pas vraiment les entrepose
+r, nous les donnerons directement aux bénéficiaires. Donc je dirais une boîte de
+ 60 L.
+Voulez-vous uniquement des fruits prêts à la consommation ou vous pouvez les tra
+nsformer? Prêts à la consommation seulement pour l&#x27;instant. Quand nous repr
+endrons nos activités de cuisine collective, nous pourrons peut-être en prendre
+à transformer.
+Quels sont les services offerts par votre organisme? Banque alimentaire seulemen
+t pour l&#x27;instant (avant, nous avions des cuisines collectives et reprendron
+s éventuellement)
+Avez-vous les contenants nécessaires à l&#x27;entreposage des fruits? Nous avons
+ des bacs de 60L.</td>
+                                <td>Élisabeth Paradis
+                                     <br><small>514-349-4407</small>
+                                </td>
+                                <td>Ahuntsic</td>
+                            </tr>
+
+                            <tr>
+                                <td>844</td>
+                                <td>Sun Youth</td>
+                                <td>Sun Youth is opened Mon-Fri 8-4. You can nor
+mally drop off
+at the back entrance anytime of the day during our opening hours. We
+have a really big fridge approximately 15 feet by 12 feet. The maximum
+amount would be amazing since we constantly have people coming in
+every day for the food bank. We will take both ready to eat and
+transformed fruits. There are wooden pails in my office that you can
+use.</td>
+                                <td>Michelle Della Corte
+                                     <br><small>514-842-6822</small>
+                                </td>
+                                <td>Parc-Extension</td>
+                            </tr>
+
+                            <tr>
+                                <td>792</td>
+                                <td>La Récolterie</td>
+                                <td>carrefour jeunesse emploi (CJE) Hochelaga-Ma
+isonneuve
+
+Il y une remorque à velo au CJE dont les bénévoles de fruit déf peuvent emprunte
+r pour des récoltes en ce quartier. Il n&#x27;y a pas d&#x27;autres matériaux al
+ors si quelqu&#x27;un choisissent de faire une cueillette en ce voisinage il fau
+t amener aussi tout autre équipements soit les leurs soit d&#x27;un autre point
+d’équipement
+
+En ce moment, la remorque est au CJE (carrefour jeunesse emploi) Hochelaga-Maiso
+nneuve. Le cje est présentement fermé a cause du Covid et ne sait pas encore qua
+nd est-ce qu&#x27;il réouvrira ses portes.
+La personne contact (nom??) est toujours au poste de la récolterie cette année e
+t il a les clés du Cje . Alors si les bénévoles de Fruits déf le contacte d&#x27
+;avance, il pourra convenir un horaire pour que il aille leur ouvrir et prêter l
+a remorque puis il pourra aussi leur ouvrir pour la retourner en attendant la r
+éouverture du Cje. Par la suite nous pourrions nous arranger selon les horaires
+du Cje puisque a ce moment il y aura toujours quelqu&#x27;un de présent pour vou
+s ouvrir.
+
+La personne pourra le contacter sur son cellulaire de travail : 514-506-1913 de
+lundi au vendredi de 9:00 à 16:00. S&#x27;il ne réponds pas laissez-le un messag
+e. Pour le prêt de la remorque il peux le faire en dehors de ces horaires bien e
+ntendu.</td>
+                                <td>Admin Saskatoon
+                                     <br><small>514-506-1913</small>
+                                </td>
+                                <td>Mercier-Hochelaga-Maisonneuve</td>
+                            </tr>
+
+                            <tr>
+                                <td>786</td>
+                                <td>Community Fridge - La Petite Patrie</td>
+                                <td>https://www.facebook.com/pg/LeFridgePetitePa
+trie/about/?ref=page_internal .
+
+(* Les horaires peuvent varier en fonction de la disponibilité des bénévoles pou
+r ouvrir le local)
+Mardi: 13h00 à 17H
+Mercredi: 13h00 à 17h00
+Jeudi: 13h00 à 17h00
+
+fridgepp@gmail.com</td>
+                                <td>DELETE None
+                                     <br><small>none</small>
+                                </td>
+                                <td>Petite-Patrie</td>
+                            </tr>
+
+                            <tr>
+                                <td>744</td>
+                                <td>Action Centre-Ville</td>
+                                <td>***MISE à JOUR en AOÛT 2020*** Il faut avoir
+ leur confirmation avant de donner des fruits.
+Personnes à contacter: Nadia Hébert &lt;nadia.hebert@acv-montreal.com&gt; et Hél
+ène Laviolette &lt;helene.laviolette@acv-montreal.com&gt;.
+L&#x27;horaire 2020: lundi à jeudi de 9h à 16h.  Dès septembre 2020: du lundi au
+ vendredi.
+20 livres est généralement le maximum de fruits qu&#x27;ils peuvent accepter --
+vérifier avec elles en avance. Cette année, les fruits se destinent aux aînés r
+ésidant aux Habitations Jeanne-Mance (ainsi qu’aux aînés du quartier) à qui Acti
+on Centre-Ville livre des repas à domicile.
+Ils sont capable transformer les fruits en desserts.</td>
+                                <td>Nadia Hebert
+                                     <br><small>(514) 878-0847</small>
+                                </td>
+                                <td>Ville-Marie</td>
+                            </tr>
+
+                            <tr>
+                                <td>668</td>
+                                <td>Épicerie solidaire de Rosemont</td>
+                                <td>L’Épicerie solidaire de Rosemont est un maga
+sin économique où on trouve l’essentiel à prix abordable et où on peut échanger
+autour d’un bon café.
+HORAIRE DE RECEPTION DES FRUITS (2019): : lundi, mardi ou mercredi.  Contacter 3
+ jours en avance ou avant est recommandé. Dans le cas où, les cueillettes ne ser
+aient pas faites ces journées-là, il est préférable que les fruits soient donnés
+ entièrement à Bouffe-Action ou autre
+HORAIRE D&#x27;OUVERTURE DE L&#x27;ÉPICERIE (2019):  les premier et troisième je
+udis du mois de 13h à 19h.
+Plus d&#x27;infos : https://bouffe-action.org/epicerie-solidaire-de-rosemont/</t
+d>
+                                <td>Catherine D’Amours-Archambault
+                                     <br><small>438-883-9143</small>
+                                </td>
+                                <td>Rosemont</td>
+                            </tr>
+
+                            <tr>
+                                <td>658</td>
+                                <td>Community Fridge - LOCO Verdun</td>
+                                <td>****NON ACCESSIBLE PRÉSENTEMENT
+****Frigo Bonapp (en réparation 2019-06-16)
+Aucun préavis requis
+Dépôt durant les heures d&#x27;ouvertures
+LUN-VEN : 10h à 20h
+SAM-DIM : 9 à 19h</td>
+                                <td>Admin Saskatoon
+                                     <br><small>438-476-4794</small>
+                                </td>
+                                <td>Verdun</td>
+                            </tr>
+
+                            <tr>
+                                <td>657</td>
+                                <td>Community Fridge - LOCO Villeray</td>
+                                <td>Dépôt possible durant heures d&#x27;ouvertur
+es :
+LUN-VEN : 9h à 20h
+SAM-DIM : 9h à 19h
+Aucun préavis nécessaire</td>
+                                <td>Admin Saskatoon
+                                     <br><small>438-386-7345</small>
+                                </td>
+                                <td>Villeray</td>
+                            </tr>
+
+                            <tr>
+                                <td>656</td>
+                                <td>Community Fridge - Bâtiment 7</td>
+                                <td>Frigo extérieur accessible 24h.</td>
+                                <td>Admin Saskatoon
+                                     <br><small>n/a</small>
+                                </td>
+                                <td>Pointe-Saint-Charles</td>
+                            </tr>
+
+                            <tr>
+                                <td>638</td>
+                                <td>Community Fridge - Frigo des Ratons de Rosem
+ont</td>
+                                <td>****NON ACCESSIBLE PRÉSENTEMENT
+
+Réfrigérateur communautaire... en repos (non accessible) pour quelques semaines
+et réouvrira pas très loin...
+
+Publiez sur le groupe Facebook pour aviser les gens de votre don / Please post o
+n the Facebook group if you donate in their fridge : https://www.facebook.com/gr
+oups/1580064318975893/about/</td>
+                                <td>Admin Saskatoon
+                                     <br><small>n/a</small>
+                                </td>
+                                <td>Rosemont</td>
+                            </tr>
+
+                            <tr>
+                                <td>637</td>
+                                <td>Community Fridge - Fend the Hen</td>
+                                <td>****Déplacé pour le moment mais sans aucune
+nouvelle du nouveau emplacement.
+
+St-Henri&#x27;s community fridge.
+
+Located at the Fattal building, entrance on Acorn between St.Remi &amp; Courcell
+e. To donate food or for information please don&#x27;t hesitate to post here or
+get a hold of one of the group admins.
+
+A restaurant gave Darren full access to their place for storage &amp; cooking, h
+e can take massive donations now.
+
+Please post on the Facebook group to advise beneficiaries when the donation is d
+one : https://www.facebook.com/groups/1168162829994266/
+
+Other info about the administrator of the fridge : https://www.journaldemontreal
+.com/2019/01/04/quartier-saint-henri-il-a-cuisine-225-repas-de-noel-pour-les-plu
+s-demunis</td>
+                                <td>Darren Gerbrandt
+                                     <br><small>Use Facebook messenger</small>
+                                </td>
+                                <td>Saint-Henri-Little-Burgundy-Griffintown</td>
+                            </tr>
+
+                            <tr>
+                                <td>634</td>
+                                <td>Community Fridge - Fatimah&#x27;s Community
+Fridge</td>
+                                <td>Le frigo est toujours accessible.
+
+Fatimah&#x27;s Community Fridge is a project of PEACE Initiatives Canada and The
+ Coalition of Little Burgundy, aiming to build bridges by helping those in need.
+
+Publiez sur le groupe Facebook pour aviser les gens de votre don / Please post o
+n the Facebook group announce your donation : https://www.facebook.com/FatimahsC
+ommunityFridge/</td>
+                                <td>Admin Saskatoon
+                                     <br><small>(514) 746-2526</small>
+                                </td>
+                                <td>Saint-Henri-Little-Burgundy-Griffintown</td>
+                            </tr>
+
+                            <tr>
+                                <td>612</td>
+                                <td>École d&#x27;été en agriculture urbaine</td>
+                                <td>Semaine de formation organiser par l&#x27;UQ
+AM.</td>
+                                <td>Élise Denis
+                                     <br><small>438-728-4336</small>
+                                </td>
+                                <td>Ville-Marie</td>
+                            </tr>
+
+                            <tr>
+                                <td>606</td>
+                                <td>Marché Ahuntsic Cartierville</td>
+                                <td>**** UPDATED FOR 2018
+Description de l&#x27;organisme: Entreprise d’économie sociale et solidaire, OBN
+L ayant pour objectif de rendre accessible physiquement et économiquement des fr
+uits et légumes frais et locaux aux citoyens de l’arrondissement
+Personne contact: César Herzele
+Numéro de téléphone: 514-576-1858
+Adresse: 10 416 rue Lajeunesse
+Courriel: cesar@marcheac.com
+Heure d&#x27;ouverture pour le don: Idéalement les vendredi mais cela peut être
+les autres jours de la semaine entre 15 et 19h au marché se situant au niveau du
+ métro Sauvé</td>
+                                <td>César Herzele
+                                     <br><small>514-576-1858</small>
+                                </td>
+                                <td>Cartierville</td>
+                            </tr>
+
+                            <tr>
+                                <td>602</td>
+                                <td>Épicerie Le Détour au Bâtiment 7</td>
+                                <td>Mise à jour MAI 2019 ;
+Une épicerie à but non lucratif, ouverte à tout le monde et gérée par ses membre
+s!
+Le Détour est situé au Bâtiment 7, un bâtiment industriel au sud du quartier Poi
+nte-Saint-Charles cédé à la communauté, après des années de lutte. S’y installe
+un pôle communautaire de services, au fin fond d’un quartier où il manque de tou
+t… sauf d’audace! ;
+
+http://epicerieledetour.org/nous-contacter/ ;
+info@epicerieledetour.org ;
+
+Numéro de téléphone : 438-476-5471 ;
+Courriel : info@epicerieledetour.org ;
+Personne-contact (titre/rôle) : Grégoire Dorval ;
+Heures de dépôt des fruits : ouverture de l&#x27;épicerie du mardi au vendredi 1
+1h à 19h; samedi et dimanche 9h à 18h. ;
+Est-ce nécessaire de prévenir avant de venir porter les fruits? non ;
+Limite d&#x27;entreposage de fruits : 4 m carré ;
+Accepte tous les fruits, peuvent faire la transformation (font de la transformat
+ion 1 fois semaine) ;
+Avez-vous les contenants nécessaires à l&#x27;entreposage des fruits? On peut tr
+ouver facilement.</td>
+                                <td>Grégoire Dorval
+                                     <br><small>438-476-5471</small>
+                                </td>
+                                <td>Pointe-Saint-Charles</td>
+                            </tr>
+
+                            <tr>
+                                <td>578</td>
+                                <td>Les Fruits Défendus</td>
+                                <td></td>
+                                <td>Admin Saskatoon
+                                     <br><small>514-360-8566</small>
+                                </td>
+                                <td>Plateau-Mont-Royal</td>
+                            </tr>
+
+                            <tr>
+                                <td>567</td>
+                                <td>Service d&#x27;aide communautaire Anjou</td>
+                                <td></td>
+                                <td>Test Test 2
+                                     <br><small>514 354-4299</small>
+                                </td>
+                                <td>Anjou</td>
+                            </tr>
+
+                            <tr>
+                                <td>535</td>
+                                <td>Au Coop de Pouce Centre-Sud</td>
+                                <td>Organisme communautaire d&#x27;éducation pop
+ulaire, repas communautaires  ... au coeur des gens du Centre-Sud.
+
+Heures d&#x27;ouverture
+du lundi au vendredi de 9h à 12h
+de 13h à 17h</td>
+                                <td>Gisele Caron
+                                     <br><small>5145212431</small>
+                                </td>
+                                <td>Ville-Marie</td>
+                            </tr>
+
+                            <tr>
+                                <td>532</td>
+                                <td>La Maison d&#x27;Aurore</td>
+                                <td>MISE À JOUR MAI 2020
+Adresse : 4815 rue Garnier ;
+Téléphone : 514 527-9075 ;
+Courriel : jardincollectif@maisonaurore.org et sylvie@maisonaurore.org ;
+Personne contact : Lilia Luna (jardincollectif) et Sylvie Bureau ;
+
+Cuisine collective, repas communautaire, ateliers de cuisine et agriculture urba
+ine, etc. ;
+Les horaires en été (juin, juillet-août) sont un peu variables.
+En septembre et octobre c’est toujours de lundi au jeudi de 9h30 – 17h (à except
+ion du mardi matin qu’on est fermé de 9h30 à 13h) ;
+Communiquez directement avec eux soit par téléphone si c’est dernière minute 514
+-527-9075 ou par courriel à cet email jardincollectif@maisonaurore.org ou le cou
+rriel de sylvie@maisonaurore.org, pour avoir une confirmation de qu’on est ouver
+t, avant de livrer ;
+Prête à recevoir des fruits en tout le temps. Préfère le savoir 1 à 3 journées e
+n avance pour planifier la semaine et les activités ;
+Heures de dépôt de fruits : lundi au jeudi de 9h30 – 17h (à exception du mardi m
+atin qu’on est fermé de 9h30 à 13h) ;
+Lundi et jeudi (mois de Juillet-août, on est ici de 18h jusqu’à 19h30 mais dans
+le jardin, dans le coin de Gilford et Lanaudière. 4815, Lanaudière) ;
+Est-ce nécessaire de prévenir avant de venir porter les fruits? Oui svp on préf
+ère le savoir 1 à 3 journées en avance pour planifier notre semaine et activités
+ ;
+Limite d’entreposage de fruits : aucun ;
+Voulez-vous uniquement des fruits prêt à la consommation ou vous pouvez le trans
+former? On aime les fruits prêt à consommer mais on a aussi  la possibilité de t
+ransformer les fruits ;
+On a pas de nombreux contenants pour l’entreposage des fruits (juste quelques ba
+cs en plastique et pots de 1L et 5L).</td>
+                                <td>Lilia Luna
+                                     <br><small>438 879 5607(514) 527-9075</smal
+l>
+                                </td>
+                                <td>Plateau-Mont-Royal</td>
+                            </tr>
+
+                            <tr>
+                                <td>522</td>
+                                <td>Centre des Aînés de Villeray</td>
+                                <td>Mise à jour MAI 2019 ;
+
+Services alimentaires: Cafétéria communautaire, repas congelés à prix modique, a
+teliers de cuisine gratuits, service traiteur pour organismes qui ont des événem
+ents dans le Centre communautaire ;
+
+Contactez: Marie-Julie Dalpé; coordonnatrice aux services alimentaires ;
+Ouvert: Lundi au vendredi de 9h00 à 16h00 ;
+(Le dépôt peut toujours se faire au Centre Lajeunesse: Ouvert: Lundi au vendredi
+ de 8h00 à 22h00
+Samedi et dimanche de 9h00 à 17h00 Mettre les fruits dans le réfrigérateur situ
+é à côté de la cuisine.) ;
+
+Numéro de téléphone : 514 277-7574 (Cellulaire 438-764-7466) ;
+Courriel : cuisine.cadv@gmail.com ;
+Est-ce nécessaire de prévenir avant de venir porter les fruits? Autant que possi
+ble, mais pas essentiel (peut se faire par courriel ou sur la boite vocale) ;
+Limite d&#x27;entreposage de fruits : 2 frigos ;
+Accepte tous les fruits, ils peuvent transformer sur place ;
+
+Autres informations importantes : Nous allons privilégier la distribution des fr
+uits frais et prêts à manger aux autres organismes situés dans le Centre Lajeune
+sse, et transformer le reste, le cas échéant.</td>
+                                <td>Marie-Julie Dalpé
+                                     <br><small>514 277-7574</small>
+                                </td>
+                                <td>Villeray</td>
+                            </tr>
+
+                            <tr>
+                                <td>474</td>
+                                <td>Cuisines Collectives du Grand Plateau</td>
+                                <td>[Mise a jour en Sept 2019]:
+
+Leur capacités pour l&#x27;entreposage, conservation et transformation sont très
+ limités. Gros maximum de 20 livres de fruits. Préférence pour les fruits qui se
+ mangent tel quel -- sans transformation -- et qui se conservent bien, comme des
+ pommes et des poires (peut-être des prunes). Pas de griottes, raisins ou pommet
+tes, s&#x27;il vous plait.
+
+Ouvert du lundi au jeudi, de 9h à 16h. A cause des travaux, accédez rue St. Andr
+e du nord par rue Rachel et allez sur St. André a sens inverse.
+
+Il faut contacter Suzanne Simard (directrice?) en avance pour le don de fruits.
+direction@ccgp-montreal.org
+514-523-1752</td>
+                                <td>Suzanne Simard
+                                     <br><small>514-523-1752</small>
+                                </td>
+                                <td>Plateau-Mont-Royal</td>
+                            </tr>
+
+                            <tr>
+                                <td>471</td>
+                                <td>La Corbeille-Bordeaux-Cartierville</td>
+                                <td>La Corbeille oeuvre à Bordeaux-Cartierville
+depuis 30 ans. Elle possède deux missions : la sécurité alimentaire des citoyens
+ du quartier via une épicerie communautaire et plusieurs activités de participat
+ion citoyenne autour de la sécurité alimentaire ainsi que l&#x27;insertion socio
+professionnelle via quatre plateaux de formation en alimentation.</td>
+                                <td>Admin Saskatoon
+                                     <br><small>514-856-0838 p.227</small>
+                                </td>
+                                <td>Cartierville</td>
+                            </tr>
+
+                            <tr>
+                                <td>470</td>
+                                <td>Carrefour Populaire de St-Michel</td>
+                                <td>Le Carrefour est un centre communautaire qui
+ intervient auprès des individus et  familles du quartier Saint-Michel dont l’ac
+tion vise l’amélioration de leur qualité de vie collective et celle de leur mili
+eu. Nos valeurs: reprise du pouvoir, entraide, solidarité</td>
+                                <td>Xia Ting Li
+                                     <br><small>514-722-1211 poste 32</small>
+                                </td>
+                                <td>Villeray</td>
+                            </tr>
+
+                            <tr>
+                                <td>469</td>
+                                <td>Cuisine collective d&#x27;Hochelaga Maisonne
+uve</td>
+                                <td>Mise à jour en mai 2019
+Nom de l&#x27;organisme : Cuisine collective d&#x27;Hochelaga Maisonneuve ;
+Mission : La cuisine collective Hochelaga-Maisonneuve (La CCHM) est un organisme
+ à but non lucratif dont la mission est de promouvoir une saine alimentation, de
+ favoriser l’autonomie et de développer la capacité d’agir des personnes, en met
+tant l’économie au service du social.
+Adresse : 3568 rue Adam ;
+Numéro de téléphone : 514-529-0789 poste 229 ;
+Courriel : cuisinecollective@lacchm.com ;
+Personne-contact (titre/rôle) : Richard (responsable équipe), Sophie (animatrice
+) ou Anaïs (animatrice) ;
+Heures de dépôt des fruits : entre 8h et 15h30 ;
+Est-ce nécessaire de prévenir avant de venir porter les fruits? Oui
+Limite d&#x27;entreposage de fruits : nous contacter pour de gros volumes (+ de
+10 kg)
+Accepte tous les fruits, peuvent les transformer
+Avez-vous les contenants nécessaires à l&#x27;entreposage des fruits? oui</td>
+                                <td>Admin Saskatoon
+                                     <br><small>514-529-0789 poste 229</small>
+                                </td>
+                                <td>Mercier-Hochelaga-Maisonneuve</td>
+                            </tr>
+
+                            <tr>
+                                <td>428</td>
+                                <td>SNAC</td>
+                                <td>Service de Nutrition et d&#x27;Action Commun
+autaire d&#x27;Ahuntsic (SNAC)
+info@lesnac.com
+L-V 9h to 16h. Tuesday or Wednesday morning is ideal because of when they distri
+bute food, but anytime is great. A heads up is appreciated, but not obligatory.
+They have plenty of room in their walk-in refrigerator (chambre froide).
+Fresh fruit is best, because what they cook in their kitchen is generally NOT de
+ssert.
+They work with about 120 families
+
+Notre mission est d&#x27;offrir des services afin d&#x27;améliorer la sécurité a
+limentaire des résidents du quartier Ahuntsic qui ont un revenu sous le seuil du
+ faible revenu.</td>
+                                <td>Chantal
+                                     <br><small>(514) 385-6499</small>
+                                </td>
+                                <td>Ahuntsic</td>
+                            </tr>
+
+                            <tr>
+                                <td>358</td>
+                                <td>Un Plant de Tomate à la Fois</td>
+                                <td>Mise à jour MAI 2019
+
+Nom de l&#x27;organisme : Un Plant de Tomate à la Fois ;
+Repas communautaires une fois semaine, mini-marché, marché mobiles, ateliers de
+cuisine ;
+Adresse : 666 Rue Woodland ;
+Numéro de téléphone : 438-764-7969 (Julie Langlois&#x27; personal cell phone) ;
+Courriel : julie.langlois@dawsonbgc.ca, food-sustainability@dawsonbgc.ca  plant.
+de.tomate@dawsonbgc.ca,  plant.de.tomate@gmail.com ;
+
+Personne-contact (titre/rôle) : Julie Langlois, Chargée projet agriculture urbai
+ne ;
+Heures de dépôt des fruits : 8h00 à 18h00 ;
+Est-ce nécessaire de prévenir avant de venir porter les fruits? Oui svp ;
+Limite d&#x27;entreposage de fruits : aucune ;
+Accepte tous les fruits, peuvent les transformer ;
+
+Avez-vous les contenants nécessaires à l&#x27;entreposage des fruits? Oui nous a
+vons une chef sur place et tout ce qu,il faut pour l&#x27;entreposage, transform
+ation en cuisine ou mise en conserve ;
+Autres informations importantes? Il peut être possible de faire une livraison le
+ week-end, nous contacter s.v.p. Les récoltes seront utliser par notre cuisine e
+xclusivement</td>
+                                <td>Julie Langlois
+                                     <br><small>438-764-7969 (Julie Langlois&#x2
+7; personal cell phone)</small>
+                                </td>
+                                <td>Verdun</td>
+                            </tr>
+
+                            <tr>
+                                <td>350</td>
+                                <td>Coopérative de solidarité La place commune</
+td>
+                                <td>**** MIS À JOUR EN AOÛT 2019
+
+Nom de l&#x27;organisme : Coopérative de solidarité La place commune
+Adresse : 7669 Avenue Querbes
+Numéro de téléphone : 438-385-7669
+
+Courriel : simonekchen@gmail.com ou coordination@laplacecommune.com
+
+Personne-contact (titre/rôle) : Simone Chen (on peut la contacter pour toute que
+stion concernant l&#x27;accès/dépôt à La Place Commune, ou bien pour la demander
+ de l&#x27;aide avec un récolte/les équipements ou toute autre question)
+ou
+Geneviève Boulay ou Simon Peronnon (Membres du Comité de Direction)
+
+Heures de dépôt des fruits : mardi au samedi (9am à 6pm, ou sur rendez-vous). AT
+TENTION: C&#x27;est possible d&#x27;arranger le dépôt de fruits hors de ces heur
+es avec Simone Chen (simonekchen@gmail.com ou 310-940-0516)
+
+Est-ce nécessaire de prévenir avant de venir porter les fruits? Si possible, mai
+s pas obligé
+Limite d&#x27;entreposage de fruits : Aucune limite
+Voulez-vous uniquement des fruits prêt à la consommation ou vous pouvez les tran
+sformer? Les deux, tout est bienvenu.
+Quelles sont les services offerts par votre organisme? banque alimentaire, cuisi
+ne collective, repas communautaire, redistribution à d&#x27;autres banques alime
+ntaire du quartier Parc-Ex
+Avez-vous les contenants nécessaires à l&#x27;entreposage des fruits? Oui
+
+
+Gros frigo (bien identifier les fruits) dans le sous-sol
+Tout type de fruits sont bienvenus
+La place publique a une cuisine pour transformation
+Elle redistribuera les fruits à plusieurs autres organismes de Parc Ex:
+- Afrique au féminin
+- Jardins collectifs Parc Ex
+- Parc Extention Youth Organisation
+- Vrac environnement
+- Ressource action alimentation
+
+Possibilité de compost dans l&#x27;arrondissement, leur demander
+
+*********Le Point d&#x27;Équipement chez La Place Commune est maintenant prêt! I
+l est toujours accessible pendant nos heures d&#x27;ouverture sauf pour le mercr
+edris (disponible dès que 15h)--si vous voulez utiliser l&#x27;équipement hors d
+es ces heures, vous pouvez contacter Simone Chen 310-940-0516 pour l&#x27;arrang
+er! :)</td>
+                                <td>Simone Chen
+                                     <br><small>310-940-0516</small>
+                                </td>
+                                <td>Parc-Extension</td>
+                            </tr>
+
+                            <tr>
+                                <td>348</td>
+                                <td>Bouffe-action Rosemont</td>
+                                <td>***MISE A JOUR JUILLET 2019***
+&gt;Nom de l&#x27;organisme : Bouffe-Action Rosemont.
+&gt;Adresse : 5350 Lafond.
+&gt;Numéro de téléphone : 514 523-2460 (poste 228)).
+&gt;Courriel : jardins@bouffe-action.org et animation.jardins@bouffe-action.org.
+
+&gt;Personne-contact (titre/rôle) : Evelyne Boissoneault.
+&gt;Heures de dépôt des fruits : 9h-16h du lundi au jeudi.
+&gt;Est-ce nécessaire de prévenir avant de venir porter les fruits? Oui.
+&gt;Limite d&#x27;entreposage de fruits : aucune.
+&gt;Voulez-vous uniquement des fruits prêt à la consommation ou vous pouvez les
+transformer? Pour ce qui est des fruits de transformation, cela dépend de la dis
+ponibilité de nos cuisines et de nos bénévoles. C’est plutôt au cas par cas.
+&gt;Quelles sont les services offerts par votre organisme? Cuisines collectives,
+ jardins collectifs, ateliers en nutrition en périnatalité, ateliers d’éducation
+ populaire.
+&gt;Avez-vous les contenants nécessaires à l&#x27;entreposage des fruits? Oui.
+&gt;Autres informations importantes? Durant le mois de juillet 2019, nous achemi
+nerons des denrées dans des dépannages alimentaires de Rosemont, donc le plus de
+ fruits, le mieux !</td>
+                                <td>Evelyne Boissoneault
+                                     <br><small>514 523-2460 (poste 228))</small
+>
+                                </td>
+                                <td>Rosemont</td>
+                            </tr>
+
+                            <tr>
+                                <td>346</td>
+                                <td>Carrefour alimentaire Centre-Sud</td>
+                                <td>Mise à jour en MAI 2019 ;
+Organisme de cuisine collective et repas communautaires ;
+1855 rue du Havre (cuisine) ;
+514-554-0750 (cell Marie-Claude) ;
+Contact: &lt;mc.morin-ouellet@carrefouralimentaire.org&gt; ;
+
+Horaire de réception des fruits : en journée la semaine, aucune heure d&#x27;ouv
+erture fixe, mais les mardis après-midis, il y a toujours quelqu&#x27;un à la cu
+isine. Sinon, il faut téléphoner. ;
+Est-ce nécessaire de prévenir avant de venir porter les fruits? Oui ;
+Limite d&#x27;entreposage de fruits : 3 caisses ;
+Accepte tous les fruits (peuvent les transformer) ;
+Avez-vous les contenants nécessaires à l&#x27;entreposage des fruits? Oui</td>
+                                <td>Marie-Claude Ouellet
+                                     <br><small>(514) 525-6611</small>
+                                </td>
+                                <td>Ville-Marie</td>
+                            </tr>
+
+                            <tr>
+                                <td>342</td>
+                                <td>Share the Warmth - Partageons l&#x27;espoir<
+/td>
+                                <td>Mise à jour MAI 2019 ;
+
+DURING THE PANDEMIC: Share the Warmth  equipment will be accessible monday-frida
+y from 8h30-16h
+***In order to access the equipment and make a fruit donation you must contact:
+ MON/TUES Emily (514-377-4103) or on WEDS/THURS/FRI Luca (514-867-5099)
+
+Courriel: securitealimentaire@partageonslespoir.ca ou foodsecurityadmin@sharethe
+warmth.ca ;
+Numéro de téléphone : 514-933-5599 ext 221;
+Heures de dépôt des fruits:
+Monday to Friday: 8:30 a.m. to 4:00 p.m.
+Saturday: 8:30 a.m. to 3:30 p.m.
+
+Est-ce nécessaire de prévenir avant de venir porter les fruits? Non ;
+Limite d&#x27;entreposage de fruits: Aucune limite, nous avons une très grande c
+hambre froide ;
+Voulez-vous uniquement des fruits prêt à la consommation ou vous pouvez les tran
+sformer? Nous pouvons également les transformer
+(Nous récoltons les fruits suivants: cerises-griotte, cerises sucrées, amélanche
+s, pommes, poires, prunes, raisins) ;
+Quelles sont les services offert par votre organisme? marché de fruits et légume
+s, café communautaire ;
+Avez-vous les contenants nécessaires à l&#x27;entreposage des fruits? Oui ;
+Autres informations : si la cueillette est très grande, vous pouvez demander qu&
+#x27;on camion viennent ramasser le don. Il faut un avis d&#x27;au moins 48h.</t
+d>
+                                <td>Admin Saskatoon
+                                     <br><small>514-933-5599 poste 221</small>
+                                </td>
+                                <td>Pointe-Saint-Charles</td>
+                            </tr>
+
+                            <tr>
+                                <td>270</td>
+                                <td>Mile End Community Mission</td>
+                                <td>MISE À JOUR EN MAI 2020
+
+Ne reçois pas de don cette année</td>
+                                <td>Lou Hachey
+                                     <br><small>514-274-3401</small>
+                                </td>
+                                <td>Mile End</td>
+                            </tr>
+
+                            <tr>
+                                <td>202</td>
+                                <td>Depôt Alimentaire NDG Food Depot</td>
+                                <td>**** UPDATED FOR 2019
+
+The Depot: community food centre
+
+Organization name: Depôt Alimentaire NDG Food Depot
+Address: 6450 Avenue Somerled
+Phone Number: 514 483 4680
+Email Address: chef@depotndg.org
+Contact person (and role/title): James Barrington (community chef)
+storage capacity: high
+Advance notice is very much preferred.
+
+Possible drop off hours:
+Monday - 12:00-16:30
+Tuesday - 10:00-12:30
+Thursday - 13:00-16:00
+
+We are do emergency baskets, home deliveries, community meals, kitchen collectiv
+es and workshops, urban agriculture, etc.
+There are milk crates and green boxes on hand almost always.</td>
+                                <td>James Barrington
+                                     <br><small>514 483 4680</small>
+                                </td>
+                                <td>Notre-Dame-de-Grâce</td>
+                            </tr>
+
+                            <tr>
+                                <td>189</td>
+                                <td>Member of the board of directors of the hous
+ing co</td>
+                                <td></td>
+                                <td>Richard Phaneuf
+                                     <br><small>5148496957</small>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>177</td>
+                                <td>Montréal Invest inc.</td>
+                                <td></td>
+                                <td>Arielle  Pacaud
+                                     <br><small>514-845-1360</small>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>174</td>
+                                <td>Santropol Roulant</td>
+                                <td>2020 UPDATE:
+Cloth or procedural mask-wearing is mandatory at all times at Santropol Roulant.
+ One person at a time. All protocols of Les Fruits defendus COVID-19 protocols a
+pply.
+To confirm your visit please email nazmus@santropolroulant.org
+
+Monday-Tuesday-Wednesday-Friday and Saturday
+
+09:30am to 12:30pm
+3:30pm-5:30pm
+
+The equipment is stored in the bike work shop.
+
+Please enter by the front door, already be wearing your mask and sanitize your h
+ands. Let a staff member know you are here to pick up the equipment and need acc
+ess to the bikework shop, they will most likely ask you to go outside and they&#
+x27;ll open the door.
+
+Once in the shop, you will have access to a sink to wash hands, equipment etc.
+
+To be confirmed: A key to the bike shop door will be made available to return wi
+thout staff assistance after closing. Please make sure the door is locked when r
+eturning by turning the lock in the opposite direction and return the key.
+
+Fruit donations may be left in the fridge downstairs - please wash hands before
+and after handling the containers.
+
+Contact: nazmus@santropolroulant.org</td>
+                                <td>Nazmus Syed
+                                     <br><small>514-284-9335</small>
+                                </td>
+                                <td>Plateau-Mont-Royal</td>
+                            </tr>
+
+                            <tr>
+                                <td>165</td>
+                                <td>Ferme du Zephyr</td>
+                                <td></td>
+                                <td>Elizabeth   Morgan
+                                     <br><small>(514) 457 9659</small>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>137</td>
+                                <td>Couvent Hotel-Dieu</td>
+                                <td>La responsable est maintenant Nicole Gaudet<
+/td>
+                                <td>Soeur Denise  Lafond
+                                     <br><small>(514) 844-3961</small>
+                                </td>
+                                <td>Plateau-Mont-Royal</td>
+                            </tr>
+
+                            <tr>
+                                <td>130</td>
+                                <td>Institut de tourisme et d&#x27;hôtellerie du
+ Québec</td>
+                                <td></td>
+                                <td>Carole  Kennedy
+                                     <br><small>514 282-5120</small>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>121</td>
+                                <td>École Saint-Justin</td>
+                                <td></td>
+                                <td>Michelle  Houde
+                                     <br><small>514-353-2109 (Michelle cell)</sm
+all>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>92</td>
+                                <td>CPE St. Edouard</td>
+                                <td></td>
+                                <td>Chantal   Davis
+                                     <br><small>(514) 274-9671</small>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>57</td>
+                                <td>École Camille Laurin Annexe</td>
+                                <td></td>
+                                <td>Grenier Benoit
+                                     <br><small>514-596-5175 (maison mère)</smal
+l>
+                                </td>
+                                <td>Parc-Extension</td>
+                            </tr>
+
+                            <tr>
+                                <td>38</td>
+                                <td>Maison Orchard</td>
+                                <td></td>
+                                <td>Maison Orchard
+                                     <br><small>(514) 483-6556</small>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>29</td>
+                                <td>Marvin&#x27;s Pizza</td>
+                                <td></td>
+                                <td>George
+                                     <br><small>438-765-1619</small>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>27</td>
+                                <td>Verger de Chez Nous</td>
+                                <td></td>
+                                <td>Geneviève
+                                     <br><small>(514) 674-1823</small>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>11</td>
+                                <td>École Secondaire Jeanne Mance</td>
+                                <td></td>
+                                <td>Bruno Larouche
+                                     <br><small>(514) 596-5815</small>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>8</td>
+                                <td>Église St-François d’Assise</td>
+                                <td></td>
+                                <td>Bob et Cyndy
+                                     <br><small>514-273-2311</small>
+                                </td>
+                                <td></td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Start Footer area-->
+    <div class="footer-copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p><a href="https://github.com/LesFruitsDefendus/saskato
+on-ng">Saskatoon</a> is a Free/Libre Software developed by the collective <a hre
+f="http://www.lesfruitsdefendus.org">Les Fruits Défendus.</a> Template by <a hre
+f="https://colorlib.com">Colorlib</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer area-->
+    <!-- bootstrap JS
+                ============================================ -->
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- wow JS
+                ============================================ -->
+    <script src="/static/js/wow.min.js"></script>
+    <!-- price-slider JS
+                ============================================ -->
+    <script src="/static/js/jquery-price-slider.js"></script>
+    <!-- owl.carousel JS
+                ============================================ -->
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <!-- scrollUp JS
+                ============================================ -->
+    <script src="/static/js/jquery.scrollUp.min.js"></script>
+    <!-- meanmenu JS
+                ============================================ -->
+    <script src="/static/js/meanmenu/jquery.meanmenu.js"></script>
+    <!-- counterup JS
+                ============================================ -->
+    <script src="/static/js/counterup/jquery.counterup.min.js"></script>
+    <script src="/static/js/counterup/waypoints.min.js"></script>
+    <script src="/static/js/counterup/counterup-active.js"></script>
+    <!-- mCustomScrollbar JS
+                ============================================ -->
+    <script src="/static/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></s
+cript>
+    <!-- jvectormap JS
+                ============================================ -->
+    <script src="/static/js/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="/static/js/jvectormap/jquery-jvectormap-world-mill-en.js"></scr
+ipt>
+    <script src="/static/js/jvectormap/jvectormap-active.js"></script>
+    <!-- sparkline JS
+                ============================================ -->
+    <script src="/static/js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="/static/js/sparkline/sparkline-active.js"></script>
+    <!-- sparkline JS
+                ============================================ -->
+    <script src="/static/js/flot/jquery.flot.js"></script>
+    <script src="/static/js/flot/jquery.flot.resize.js"></script>
+    <script src="/static/js/flot/curvedLines.js"></script>
+    <script src="/static/js/flot/flot-active.js"></script>
+    <!-- knob JS
+                ============================================ -->
+    <script src="/static/js/knob/jquery.knob.js"></script>
+    <script src="/static/js/knob/jquery.appear.js"></script>
+    <script src="/static/js/knob/knob-active.js"></script>
+    <!--  wave JS
+                ============================================ -->
+    <script src="/static/js/wave/waves.min.js"></script>
+    <script src="/static/js/wave/wave-active.js"></script>
+    <!--  todo JS
+                ============================================ -->
+    <script src="/static/js/todo/jquery.todo.js"></script>
+    <!-- plugins JS
+                ============================================ -->
+    <script src="/static/js/plugins.js"></script>
+    <!-- Data Table JS
+                ============================================ -->
+    <script src="/static/js/data-table/jquery.dataTables.min.js"></script>
+    <script src="/static/js/data-table/data-table-act.js"></script>
+        <!--  Chat JS
+                ============================================ -->
+    <script src="/static/js/chat/moment.min.js"></script>
+    <script src="/static/js/chat/jquery.chat.js"></script>
+    <!-- main JS
+                ============================================ -->
+    <script src="/static/js/main.js"></script>
+        <!-- tawk chat JS
+                ============================================ -->
+    <script src="/static/js/tawk-chat.js"></script>
+    <!-- icheck JS
+                ============================================ -->
+    <script src="/static/js/icheck/icheck.min.js"></script>
+    <script src="/static/js/icheck/icheck-active.js"></script>
+    <!-- Login JS
+                ============================================ -->
+    <script src="/static/js/login/login-action.js"></script>
+    <!-- bootstrap JS
+                ============================================ -->
+    <script src="/static/js/django_select2/django_select2.js"></script>
+
+  <!-- FullCalendar -->
+  <script src="/static/js/moment/min/moment.min.js"></script>
+  <script src="/static/js/fullcalendar/lib/main.min.js"></script>
+
+    <!-- Language selection -->
+    <script>
+    $('.change_language').click(function(e){
+        e.preventDefault();
+        $('#language').val($(this).attr('lang_code'));
+        $('#change_language_form').submit();
+    });
+    </script>
+</body>
+
+</html>
